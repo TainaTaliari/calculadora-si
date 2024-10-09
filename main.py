@@ -1,3 +1,7 @@
+import comprimento
+import massa
+import volume
+
 def main():
     """
     Função principal do programa.
@@ -26,32 +30,32 @@ def main():
 
         if escolha == "1":
             metros = float(input("Digite o valor em metros: "))
-            quilometros = None
+            quilometros = comprimento.converte_metros_para_km(metros)
             print(f"{metros} metros são {quilometros} quilômetros.")
             
         elif escolha == "2":
             quilometros = float(input("Digite o valor em quilômetros: "))
-            metros = None
+            metros = comprimento.converte_km_para_metros(quilometros)
             print(f"{quilometros} quilômetros são {metros} metros.")
 
         elif escolha == "3":
             gramas = float(input("Digite o valor em gramas: "))
-            quilogramas = None
+            quilogramas = massa.converter_grama_para_kg(gramas)
             print(f"{gramas} gramas são {quilogramas} quilogramas.")
            
         elif escolha == "4":
             quilogramas = float(input("Digite o valor em quilogramas: "))
-            gramas = None
+            gramas = massa.converter_kg_para_grama(quilogramas)
             print(f"{quilogramas} quilogramas são {gramas} gramas.")
 
         elif escolha == "5":
             litros = float(input("Digite o valor em litros: "))
-            mililitros = None
+            mililitros = volume.converte_l_para_ml(litros)
             print(f"{litros} litros são {mililitros} mililitros.")
 
         elif escolha == "6":
             mililitros = float(input("Digite o valor em mililitros: "))
-            litros = None
+            litros = volume.converte_ml_para_l(mililitros)
             print(f"{mililitros} mililitros são {litros} litros.")
 
         elif escolha == "7":
